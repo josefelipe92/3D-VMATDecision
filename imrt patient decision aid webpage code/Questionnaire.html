@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionnaire</title>
+    <style>
+        /* Add any desired styling for the page */
+        /* For example: */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question {
+            margin-bottom: 10px;
+        }
+        .slider {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variables to consider when making a decision</h1>
+    <form id="questionForm">
+        <div class="question">
+            <label for="q1">How much do you worry about skin reactions?</label>
+            <input type="range" id="q1" class="slider" min="0" max="10" step="1">
+            <span id="q1Value">Very Much</span>
+        </div>
+
+        <div class="question">
+            <label for="q2">How much do you worry about the acute side effects, specially fatigue?</label>
+            <input type="range" id="q2" class="slider" min="0" max="10" step="1">
+            <span id="q2Value">Very Much</span>
+        </div>
+
+        <div class="question">
+            <label for="q3">How much do you worry about the risk of second malignancies in the future?</label>
+            <input type="range" id="q3" class="slider" min="0" max="10" step="1">
+            <span id="q3Value">Very Much</span>
+        </div>
+
+        <div class="question">
+            <label for="q4">Will you be able to attend to regular followup visits after the treatment is over</label>
+            <input type="range" id="q4" class="slider" min="0" max="10" step="1">
+            <span id="q4Value">Might be difficult</span>
+        </div>
+
+        <div class="question">
+            <label for="q5">Are you worried about your future cardiovascular health?</label>
+            <input type="range" id="q5" class="slider" min="0" max="10" step="1">
+            <span id="q5Value">Very much</span>
+        </div>
+
+        <div class="question">
+            <label for="q6">Would you like to be involved in the decision?</label>
+            <input type="range" id="q6" class="slider" min="0" max="10" step="1">
+            <span id="q6Value">I prefer shared decision making</span>
+        </div>
+
+        <!-- Add more questions as needed -->
+        <input type="Submit" value="Print">
+    </form>
+
+    <script>
+        document.getElementById('questionForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            var q1Value = document.getElementById('q1').value;
+            var q2Value = document.getElementById('q2').value;
+            var q3Value = document.getElementById('q3').value;
+            var q4Value = document.getElementById('q4').value;
+            var q5Value = document.getElementById('q5').value;
+            var q6Value = document.getElementById('q6').value;
+            // Retrieve values of other questions as needed
+
+            // Print values to the console for demonstration
+            console.log('Question 1: ' + q1Value);
+            console.log('Question 2: ' + q2Value);
+            console.log('Question 3: ' + q3Value);
+            console.log('Question 4: ' + q4Value);
+            console.log('Question 5: ' + q5Value);
+            console.log('Question 6: ' + q6Value);
+            // Print values to a new window for printing
+            var printWindow = window.open('', '_blank');
+            printWindow.document.write('<html><head><title>Printed Choices</title></head><body>');
+            printWindow.document.write('<h1>Printed Choices</h1>');
+            printWindow.document.write('<p>Question 1: ' + q1Value + '</p>');
+            printWindow.document.write('<p>Question 2: ' + q2Value + '</p>');
+            printWindow.document.write('<p>Question 3: ' + q3Value + '</p>');
+            printWindow.document.write('<p>Question 4: ' + q4Value + '</p>');
+            printWindow.document.write('<p>Question 5: ' + q5Value + '</p>');
+            printWindow.document.write('<p>Question 6: ' + q6Value + '</p>');
+            // Add printed values for other questions as needed
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print(); // Print the window
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the header */
+  header {
+    background-color: #c2185b;
+    color: #fff;
+    padding: 16px;
+  }
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  /* Style for the navigation bar */
+  nav {
+    margin-top: 8px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 16px;
+  }
+  
+  /* Style for the sections */
+  section {
+    padding: 32px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #c2185b;
+  }
+  
+  section p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
+  /* Style for buttons */
+  .button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #c2185b;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-top: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #e91e63;
+  }
+  
+  /* Style for footer */
+  footer {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 16px;
+    text-align: center;
+  }
+  

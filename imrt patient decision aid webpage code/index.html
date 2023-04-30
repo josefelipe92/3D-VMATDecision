@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PMRT Decision Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .section img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .section-content {
+            max-width: 800px;
+            text-align: center;
+            padding: 20px;
+            color: #ffffff;
+            z-index: 1;
+        }
+        .section:nth-child(odd) {
+            background-color: #543851;
+        }
+        .section:nth-child(even) {
+            background-color: #482e44;
+        }
+        h1 {
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .section::before {
+            content: "";
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+        .section:nth-child(odd)::before {
+            background-image: url("image1.jpg");
+        }
+        .section:nth-child(even)::before {
+            background-image: url("image2.jpg");
+        }
+        .section:nth-child(3)::before {
+            background-image: url("image3.jpg");
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="section-content">
+            <h1>IMRT VS 3D CRT Patient Decision Guide</h1>
+            <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/logo_vmat.png" alt="logo" width="500" height="300">
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-content">
+            <h1>Information about the treatment planning</h1>
+            <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_2.png" alt="logo" width="400" height="300">
+            <p>After the decision to treat the breast with radiation therapy has been made the next step is to decide which areas of the breast are at risk and the dosage.
+
+                
+                </p>
+                <p>There are several machines and techniques available to deliver the treatment. Most of the times doctors will end up choosing between a 3DCRT based treatment or a VMAT based treatment</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-content">
+            <h1>Similarities</h1>
+            <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_3.jpg" alt="logo" width="400" height="300">
+            <p>In both treatment plans a CT scan will be performed in a position that can be replicated during treatment. </p>
+                <p> Another similarity is that the volumes of radiation will be adapted to your anatomy and both techniques are equal in terms of disease control and overall survival.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>3DCRT</h1>
+            <p>In this type of treatment, the machine is positioned in a way the radiation oncologist calls tandem beams. In this configuration there will be a direct beam of radiation that will cover the area in a straight line.</p>
+            
+            <div style="display: flex;">
+                <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_4.png" alt="Description of image 1" width="400" height="300">
+                <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_4.2.jpg" alt="Description of image 1" width="400" height="300">
+              </div>
+            <p>The main advantage is that outside of this straight line there is very little radiation that will reach other organs, this leads to less fatigue, esophagitis and nausea.</p>
+            <p>The main disadvantage is that organs that lie inside this straight line will receive as much radiation as the main area of the breast, so important organs may receive the full dose if they are close to the area at risk. </p>
+            <p> This may also translate in certain types of side effects not seen in VMAT planning. This also leads to more skin reaction and implant related complications.</p>
+
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>IMRT/ VMAT</h1>
+            <p>This treatment variation involves rotating a beam moving around the body in an arc to target areas deemed at risk by the physician.</p>
+            <div style="display: flex;">
+                <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_5.png" alt="Description of image 1" width="400" height="300">
+                <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_5.2.jpg" alt="Description of image 1" width="400" height="300">
+              </div>
+            <p>The advantage is that the treatment machine can focus on specific areas while sparing others, especially if the radiation treatment volume is close to a sensitive organ that should be avoided.  </p>
+            <p>This approach may be preferred in patients with certain lung anatomy that may require circling around the lungs or if the tumor is near the sternum.</p>
+            <p>By selecting which areas to focus on, the technique has demonstrated a reduction in reconstruction failure rates. </p>
+            <p>However, a disadvantage is that a larger volume of the chest receives a low dose of radiation, leading to potential long-term side effects such as an increased risk of heart damage and the development of a second cancer. </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>Here is a side by side comparison of how both plans look</h1>
+            <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_6.png" alt="logo" width="700" height="300">
+            <p>The high area doses are the redder zones, while the blue ones are areas that receive low dose of radiation. </p>
+            <p>Notice how in 3DCRT there is a slightly greater volume that receives a high dose and in IMRT there is a big volume that receives a low dose.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>Advantages and Disadvantages to each Technique</h1>
+            <table style="border-color: white; margin-left: auto; margin-right: auto;" border="1">
+                <tbody>
+                <tr>
+                <td width="312">
+                <p><strong>Advantage 3DCRT</strong></p>
+                </td>
+                <td width="312">
+                <p><strong>Advantages IMRT</strong></p>
+                </td>
+                </tr>
+                <tr>
+                <td width="312">
+                <p>Mean doses to heart are lower</p>
+                </td>
+                <td width="312">
+                <p>The doctor can selectively protect certain areas without compromising the main risk area (the word the radonc will use is increased conformity)</p>
+                </td>
+                </tr>
+                <tr>
+                <td width="312">
+                <p>Decreased risk of secondary malignancies</p>
+                </td>
+                <td width="312">
+                <p>Less time to perform</p>
+                <p>&nbsp;</p>
+                </td>
+                </tr>
+                <tr>
+                <td width="312">
+                <p>Less gastrointestinal symptoms</p>
+                </td>
+                <td width="312">
+                <p>Less skin reaction</p>
+                <p>&nbsp;</p>
+                </td>
+                </tr>
+                <tr>
+                <td width="312">
+                <p>Less fatigue</p>
+                </td>
+                <td width="312">
+                <p>Less implant reconstruction failure</p>
+                </td>
+                </tr>
+                <tr>
+                <td width="312">
+                <p>Less esophagitis</p>
+                </td>
+                <td width="312">
+                <p>In advanced cases may allow contouring certain hard to get areas</p>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2" width="623">
+                <p><strong>Same</strong></p>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2" width="623">
+                <p>Chances of cancer control</p>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2" width="623">
+                <p>Need for a CT scan to plan treatment</p>
+                </td>
+                </tr>
+                <tr>
+                <td colspan="2" width="623">
+                <p>Number of sessions needed to complete treatment</p>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+
+
+              
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-content">
+            <h1>Variables to consider when making a decision, you can print this and show it to your doctor to help guiding the desicion</h1>
+            <img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/screen_7.jpg" alt="logo" width="200" height="150">
+            <form id="questionForm">
+                <div class="question">
+                    <label for="q1">How much do you worry about skin reactions? Not much</label>
+                    <input type="range" id="q1" class="slider" min="0" max="10" step="1">
+                    <span id="q1Value">Very Much</span>
+                </div>
+        
+                <div class="question">
+                    <label for="q2">How much do you worry about the acute side effects, specially fatigue? Not much</label>
+                    <input type="range" id="q2" class="slider" min="0" max="10" step="1">
+                    <span id="q2Value">Very Much</span>
+                </div>
+        
+                <div class="question">
+                    <label for="q3">How much do you worry about the risk of second malignancies? Not much</label>
+                    <input type="range" id="q3" class="slider" min="0" max="10" step="1">
+                    <span id="q3Value">Very Much</span>
+                </div>
+        
+                <div class="question">
+                    <label for="q4">Will you be able to attend to regular followup visits after the treatment? Yes</label>
+                    <input type="range" id="q4" class="slider" min="0" max="10" step="1">
+                    <span id="q4Value">Might be difficult</span>
+                </div>
+        
+                <div class="question">
+                    <label for="q5">Are you worried about your future cardiovascular health? Not much</label>
+                    <input type="range" id="q5" class="slider" min="0" max="10" step="1">
+                    <span id="q5Value">Very much</span>
+                </div>
+        
+                <div class="question">
+                    <label for="q6">Would you like to be involved in the decision? I prefer the doctor make it</label>
+                    <input type="range" id="q6" class="slider" min="0" max="10" step="1">
+                    <span id="q6Value">Shared decision making</span>
+                </div>
+        
+                <!-- Add more questions as needed -->
+                <input type="submit" value="Print" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">
+            </form>
+           
+
+            <script>
+                document.getElementById('questionForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+                    var q1Value = document.getElementById('q1').value;
+                    var q2Value = document.getElementById('q2').value;
+                    var q3Value = document.getElementById('q3').value;
+                    var q4Value = document.getElementById('q4').value;
+                    var q5Value = document.getElementById('q5').value;
+                    var q6Value = document.getElementById('q6').value;
+                    // Retrieve values of other questions as needed
+        
+                    // Print values to the console for demonstration
+                    console.log('How much do you worry about skin reactions?: ' + q1Value);
+                    console.log('How much do you worry about the acute side effects, specially fatigue? ' + q2Value);
+                    console.log('How much do you worry about the risk of second malignancies in the future? ' + q3Value);
+                    console.log('Will you be able to attend to regular followup visits after the treatment is over ' + q4Value);
+                    console.log('Are you worried about your future cardiovascular health?  ' + q5Value);
+                    console.log('Question 6: ' + q6Value);
+                    // Print values to a new window for printing
+                    var printWindow = window.open('', '_blank');
+                    printWindow.document.write('<html><head><title>Printed Choices</title></head><body>');
+                    printWindow.document.write('<h1>Printed Choices</h1>');
+                    printWindow.document.write('<img src="/Users/josefelipemunozlozano/Documents/imrt patient decision aid webpage code/logo_vmat.png" alt="logo" width="250" height="150">');
+                    printWindow.document.write('<p>How much do you worry about skin reactions? (0 Not very much - 10 Very much) <strong>' + q1Value + '</strong></p>');
+                    printWindow.document.write('<p>How much do you worry about the acute side effects, specially fatigue?(0 Not very much - 10 Very much) <strong>' + q2Value + '</strong></p>');
+                    printWindow.document.write('<p>How much do you worry about the risk of second malignancies in the future? (0 Not very much - 10 Very much) <strong>' + q3Value + '</strong></p>');
+                    printWindow.document.write('<p>Will you be able to attend to regular followup visits after the treatment is over (0 Yes - 10 Might be difficult)<strong>' + q4Value + '</strong></p>');
+                    printWindow.document.write('<p>Are you worried about your future cardiovascular health? (0 Not very much - 10 Very much) <strong> ' + q5Value + '</strong></p>');
+                    printWindow.document.write('<p>Would you like to be involved in the decision? (0 I prefer my doctor make the call - 10 I prefer shared desicion making) <strong> ' + q6Value + '</strong></p>');
+                    
+                    // Add printed values for other questions as needed
+                    printWindow.document.write('</body></html>');
+                    printWindow.document.close();
+                    printWindow.print(); // Print the window
+                });
+            </script>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var sections = document.querySelectorAll('.section');
+            for (var i = 0; i < sections.length; i++) {
+                var section = sections[i];
+                var rect = section.getBoundingClientRect();
+                var translateY = Math.max(rect.top * 0.5, -200);
+                section.style.transform = 'translateY(' + translateY + 'px)';
+            }
+        });
+    </script>
+</body>
+</html>
